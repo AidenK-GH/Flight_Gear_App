@@ -25,4 +25,8 @@ public class ViewModel {
     public void onThrottleChange(double value) throws InterruptedException {
         this.model.changeThrottle(value);
     }
+
+    public void changeJoystickChange(float a, float b) throws InterruptedException {
+        this.model.changeJoystick(a, b);
+    }
 }

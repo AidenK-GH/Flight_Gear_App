@@ -99,7 +99,18 @@ public class FGModel{
     }
     // --------------------------------------------------------------------
     // -- for Joy stick
-    private int elevator;
-    private int aileron;
-
+    public void changeJoystick(float elevator, float aileron) throws InterruptedException {
+        dispatchQueue.put(new Runnable() {
+            @Override
+            public void run() {
+                //Log.d("info", "here throttle 3");
+                try {
+                    output.write( setFlight + "/elevator "+ elevator + "\r\n");
+                    output.flush();
+                    output.write( setFlight + "/aileron "+ aileron + "\r\n");
+                    output.flush();
+                } catch (IOException e) {}
+            }
+        });
+    }
 }

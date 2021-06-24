@@ -9,22 +9,27 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 
 import model.FGModel;
-import model.TelnetClient;
 import viewmodel.ViewModel;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements Joystick.JoystickListener{
 
     private ViewModel vmModel;
     private SeekBar rudderBar;
     private SeekBar throttleBar;
+    private Joystick joystick;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // joystick ------
+        Joystick joystick = new Joystick(this);
+        this.joystick = joystick;
+        //setContentView(joystick);
+
         this.vmModel = new ViewModel(new FGModel(/*new TelnetClient()*/));
 
-        // seek bars ------------------------------------------
+        // seek bars -----------------------------------------------------------------------
         this.rudderBar = (SeekBar)findViewById(R.id.rudderBar);
         rudderBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -72,7 +77,9 @@ public class MainActivity extends AppCompatActivity {
         this.vmModel.onClickConnect(IPinput, iPort);
     }
 
-    public void onClickRudderChange(){
-
+    @Override
+    public void onJoystickMoved(float elevator, float aileron, int id) throws InterruptedException {
+        //Log.d("Main Method", "X per: "+elevator + " Y per: " + aileron);
+        this.vmModel.changeJoystickChange(elevator, aileron);
     }
 }
