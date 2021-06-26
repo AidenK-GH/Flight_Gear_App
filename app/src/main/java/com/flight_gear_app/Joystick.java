@@ -19,7 +19,6 @@ public class Joystick extends SurfaceView implements SurfaceHolder.Callback, Vie
     public float centerY;
     public float baseRadius;
     public float hatRadius;
-    private final int ratio = 5;
     private JoystickListener joystickCallback;
 
     // contactors
