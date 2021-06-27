@@ -30,8 +30,8 @@ but to start the engine you need to do so in Flight Gear by:
 ## What does every thing do?
 <img src = "https://github.com/AidenK-GH/Flight_Gear_App/blob/master/whatDoesItDo.png"></br>
 
-### for Demonstration  of the app click here:
-https://youtu.be/Sf_riQ1MhFA
+### for Demonstration of the app:
+https://youtu.be/Fre-acfSTIs
 
 ## UML:
 <img src = "https://github.com/AidenK-GH/Flight_Gear_App/blob/master/Diagram1.png" width="1400" height="500"></br>
