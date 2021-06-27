@@ -20,20 +20,20 @@ public class FGModel{
 
     public static FGModel Model(){
         if(model == null){
-            model = new FGModel(/*new TelnetClient()*/);
+            model = new FGModel();
             isConnected = false;
         }
         return model;
     }
     // Constructor
-    public FGModel(/*TelnetClient client*/){
+    public FGModel(){
         new Thread(new Runnable() {
             @Override
             public void run() {
                 while (true) {
                     try {
                         dispatchQueue.take().run();
-                    } catch (InterruptedException e) {}
+                    } catch (InterruptedException e) { Log.d("error", e.getMessage()); }
                 }
             }
         }).start();
@@ -105,6 +105,7 @@ public class FGModel{
                     public void run() {
                         //Log.d("info", "here throttle 3");
                         try {
+                            // send
                             output.write(setFlight + "/elevator " + elevator + "\r\n");
                             output.flush();
                             output.write(setFlight + "/aileron " + aileron + "\r\n");

@@ -60,6 +60,7 @@
         app:layout_constraintVertical_bias="0.129" />
 
     <SeekBar
+        android:progress="@={viewmodel.currentThrottle}"
         android:id="@+id/throttleBar"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
@@ -67,7 +68,6 @@
         android:layout_marginBottom="8dp"
         android:max="100"
         android:min="0"
-        android:progress="@={viewmodel.currentThrottle}"
         android:rotation="-90"
         android:scaleY="2"
         app:layout_constraintBottom_toBottomOf="parent"
