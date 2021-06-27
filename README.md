@@ -1,7 +1,7 @@
 # Flight_Gear_App
 > an app that let's you catroll an airplane in Flight Gear
 
-<img src = "https://github.com/Daviddor95/Flight-investigation-application/blob/master/PicturesForREADME/middleScreen.png" width="600" height="450"></br>
+<img src = "https://github.com/AidenK-GH/Flight_Gear_App/blob/master/the_app.png" width="350" height="450"></br>
 
 ## How to start?
 you can use Android Stodio to run the app.
@@ -28,7 +28,7 @@ but to start the engine you need to do so in Flight Gear by:
  -> autostart
  
 ## What does every thing do?
-<img src = "https://github.com/Daviddor95/Flight-investigation-application/blob/master/PicturesForREADME/middleScreen.png" width="600" height="450"></br>
+<img src = "https://github.com/AidenK-GH/Flight_Gear_App/blob/master/whatDoesItDo.png" width="600" height="450"></br>
 
 ### for Demonstration  of the app click here:
 https://youtu.be/Sf_riQ1MhFA
