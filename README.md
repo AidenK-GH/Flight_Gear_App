@@ -28,7 +28,7 @@ but to start the engine you need to do so in Flight Gear by:
  -> autostart
  
 ## What does every thing do?
-<img src = "https://github.com/AidenK-GH/Flight_Gear_App/blob/master/whatDoesItDo.png" width="600" height="450"></br>
+<img src = "https://github.com/AidenK-GH/Flight_Gear_App/blob/master/Diagram1.png"></br>
 
 ### for Demonstration  of the app click here:
 https://youtu.be/Sf_riQ1MhFA
