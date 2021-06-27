@@ -28,10 +28,10 @@ but to start the engine you need to do so in Flight Gear by:
  -> autostart
  
 ## What does every thing do?
-<img src = "https://github.com/AidenK-GH/Flight_Gear_App/blob/master/Diagram1.png"></br>
+<img src = "https://github.com/AidenK-GH/Flight_Gear_App/blob/master/whatDoesItDo.png"></br>
 
 ### for Demonstration  of the app click here:
 https://youtu.be/Sf_riQ1MhFA
 
 ## UML:
-<img src = "https://github.com/Daviddor95/Flight-investigation-application/blob/master/PicturesForREADME/Uml.png" width="650" height="350"></br>
+<img src = "https://github.com/AidenK-GH/Flight_Gear_App/blob/master/Diagram1.png" width="1400" height="500"></br>
